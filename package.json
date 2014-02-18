@@ -6,6 +6,10 @@
   "scripts": {
     "test": "gulp test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dej611/karma-directives-preprocessor"
+  },
   "keywords": [
     "karma-plugin",
     "karma-preprocessor",
