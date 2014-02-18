@@ -47,7 +47,7 @@ module.exports = function(config) {
 };
 ```
 
-### Supported filet
+### Supported filetype
 
 Karma-directives is based on [preprocess] and it does support any filetype.
 
