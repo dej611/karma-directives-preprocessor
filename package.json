@@ -1,0 +1,28 @@
+{
+  "name": "karma-directives-preprocessor",
+  "version": "0.0.1",
+  "description": "Karma plugin for preprocessJS: preprocess HTML, Javascript and other files with directives based off custom or ENV configuration",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "keywords": [
+    "karma-plugin",
+    "karma-preprocessor",
+    "karma-directives",
+    "directives"
+  ],
+  "author": "Marco Liberati @ Cambridge Intelligence",
+  "license": "MIT",
+  "dependencies": {
+    "preprocess": "=2.0.0",
+    "gulp": "~3.5.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.8",
+    "gulp": "~3.4.0",
+    "gulp-mocha": "~0.4.1",
+    "expect.js": "~0.2.0",
+    "gulp-util": "~2.2.14"
+  }
+}
