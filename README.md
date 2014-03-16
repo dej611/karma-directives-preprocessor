@@ -38,13 +38,33 @@ module.exports = function(config) {
 
     directivesPreprocess: {
       flags: {
-        'js'  : {myflag: true, otherFlag: true }
+        'js'  : {development: true, production: false }
       } 
     },
 
     ...
   });
 };
+```
+
+Using this example file, with the configuration above, the code within `development` flag will be left while the `production` and `test` snippets will be removed from the served file.
+```js
+define([], function () {
+  "use strict";
+
+  // @if development
+  functionWithDebugOptions();
+  // @endif
+
+  // @if production
+  superQuickFunction();
+  // @endif
+
+  // @ifdef test
+  enableThisOtherFunction();
+  // @endif
+
+});
 ```
 
 ### Supported filetype
