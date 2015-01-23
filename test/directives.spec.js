@@ -25,7 +25,7 @@ describe('Preprocessor directives', function () {
 
   describe('Create production code', function(){
 
-    var expectedContent = 'define([], function () {\n  "use strict";\n\n  superQuickFunction();\n});';
+    var expectedContent = 'define([], function () {\n  "use strict";\n\n  superQuickFunction();\n    superQuickIncludedFunction();\n  \n});\n';
     var preprocessor;
 
     beforeEach(function(){

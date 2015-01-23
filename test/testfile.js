@@ -9,4 +9,5 @@ define([], function () {
   superQuickFunction();
   // @endif
 
+  // @include fixtures/included.js
 });
