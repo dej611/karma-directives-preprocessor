@@ -1,4 +1,4 @@
-# karma-directives-preprocessor
+# karma-directives-preprocessor ![travisci-result](https://travis-ci.org/dej611/karma-directives-preprocessor.svg?branch=0.0.5)
 
 > Generate multiple versions of the same file with C-style directives.
 
