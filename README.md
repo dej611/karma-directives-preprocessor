@@ -67,6 +67,8 @@ define([], function () {
 });
 ```
 
+Using the include directive you can include your 
+
 ### Supported filetype
 
 Karma-directives is based on [preprocess] and it does support any filetype.
@@ -82,6 +84,16 @@ directivesPreprocess: {
   } 
 },
 ```
+
+### Contribute
+
+If you want to contribute to the project (e.g. adding new functions, etc..) you're more than welcome.
+Please add unit tests for any new or changed functionality.
+
+### Release history
+
+0.0.5 Added new `@include` directive
+0.0.4 First full documented and tested version.
  
 ----
 

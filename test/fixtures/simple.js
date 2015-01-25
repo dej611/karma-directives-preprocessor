@@ -8,5 +8,5 @@ define([], function () {
   // @ifdef production
   superQuickFunction();
   // @endif
-
+  
 });
