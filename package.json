@@ -1,6 +1,6 @@
 {
   "name": "karma-directives-preprocessor",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Karma plugin for preprocessJS: preprocess HTML, Javascript and other files with directives based off custom or ENV configuration",
   "main": "lib/index.js",
   "scripts": {
