@@ -63,6 +63,18 @@ describe('Preprocessor directives', function () {
       });
     });
 
+    it('should work also with the include directive', function (done){
+
+      var expectedContent = 'define([], function () {\n  "use strict";\n\n    superQuickIncludedFunction();\n  \n});';
+
+      var file = {originalPath: __dirname + '/fixtures/include_subfolder.js' };
+
+      preprocessor('', file, function (processedContent){
+        expect(processedContent).to.equal(expectedContent);
+        done();
+      });
+    });
+
   });
 
 });
