@@ -92,7 +92,7 @@ Please add unit tests for any new or changed functionality.
 
 ### Release history
 
-0.0.5 Added new `@include` directive
+0.0.5 Added new `@include` directive  
 0.0.4 First full documented and tested version.
  
 ----
