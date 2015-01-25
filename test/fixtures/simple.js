@@ -8,6 +8,5 @@ define([], function () {
   // @ifdef production
   superQuickFunction();
   // @endif
-
-  // @include fixtures/included.js
+  
 });

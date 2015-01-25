@@ -25,7 +25,6 @@ describe('Preprocessor directives', function () {
 
   describe('Create production code', function(){
 
-    var expectedContent = 'define([], function () {\n  "use strict";\n\n  superQuickFunction();\n    superQuickIncludedFunction();\n  \n});\n';
     var preprocessor;
 
     beforeEach(function(){
@@ -40,14 +39,28 @@ describe('Preprocessor directives', function () {
     });
 
     it('should take out development function from the file', function (done) {
+
+      var expectedContent = 'define([], function () {\n  "use strict";\n\n  superQuickFunction();\n  \n});\n';
     
-      var file = {originalPath: __dirname + '/testfile.js' }
+      var file = {originalPath: __dirname + '/fixtures/simple.js' };
 
       preprocessor('', file, function (processedContent){
         expect(processedContent).to.equal(expectedContent);
         done();
       });
       
+    });
+
+    it('should work also with the include directive', function (done){
+
+      var expectedContent = 'define([], function () {\n  "use strict";\n\n  superQuickFunction();\n    superQuickIncludedFunction();\n  \n});';
+
+      var file = {originalPath: __dirname + '/fixtures/include_version.js' };
+
+      preprocessor('', file, function (processedContent){
+        expect(processedContent).to.equal(expectedContent);
+        done();
+      });
     });
 
   });
