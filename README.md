@@ -67,7 +67,16 @@ define([], function () {
 });
 ```
 
-Using the include directive you can include your 
+Using the include directive you can include an external file like in the example:
+
+```css
+body {
+
+  background-color: red;
+
+}
+// @include util.css
+```
 
 ### Supported filetype
 
